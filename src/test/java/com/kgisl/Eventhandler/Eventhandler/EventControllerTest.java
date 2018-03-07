@@ -69,6 +69,7 @@ public void eventSize()
     when(eventService.getAll()).thenReturn(a.eventtest1());
     ResponseEntity<?> result=eventcontroller.all();
     assertEquals(2,a.eventtest1().size() );
+    
 }
 // for (Iterator<Event> i = result.iterator(); i.hasNext();) {
 //      Event e3 = i.next();
