@@ -34,7 +34,7 @@ locations = "classpath:application.properties")
 public class EventControllerIT {
 
        
-private static final String NAME_FIELD = "date";
+private static final String  NAME_FIELD = "date";
 private static final String  EVENT_RESOURCE1 = "api/events/get";
 private static final String  EVENT_RESOURCE2 = "api/events/post";
 private static final String  EVENT_RESOURCE3 = "api/events/put/{eventId}";

@@ -25,6 +25,7 @@ public class EventController {
 
     @Autowired
     private EventService eventService;
+    
 
     @GetMapping("/get")
     public @ResponseBody ResponseEntity<List<Event>> all() {

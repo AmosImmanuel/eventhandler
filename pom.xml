@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-<profiles>
+ <profiles>
 		<profile>
 			<id>integration</id>
 			<properties>
@@ -44,8 +44,8 @@
 				<unit-tests.skip>false</unit-tests.skip>
 				<integration-tests.skip>false</integration-tests.skip>
 			</properties>
-		</profile>
-	</profiles>
+		</profile> 
+	</profiles> 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -111,8 +111,8 @@
 						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
 					</systemPropertyVariables>
 				</configuration>
-			</plugin>
-			<plugin>
+			</plugin> 
+		<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<skipTests>${unit-tests.skip}</skipTests>
@@ -168,4 +168,4 @@
 	</build>
 
 
-</project>
+</project> 
