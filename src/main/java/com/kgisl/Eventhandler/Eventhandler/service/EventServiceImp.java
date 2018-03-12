@@ -17,6 +17,7 @@ public class EventServiceImp implements EventService {
 	
 	@Override
 	public List<Event> getAll() {
+		
 		// TODO Auto-generated method stub
 		return eventRepository.findAll();
 	}

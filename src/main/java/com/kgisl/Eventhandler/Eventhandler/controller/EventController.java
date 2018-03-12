@@ -25,8 +25,45 @@ public class EventController {
 
     @Autowired
     private EventService eventService;
-    
 
+    @GetMapping("/exception")
+    public void testThrowException() {
+
+         throw new ArithmeticException();
+    }
+    
+    public static String createRelativePath(String parent, String filename) {
+        try{     
+        if(parent == null)
+      {System.out.println("-----------------------------parent null-------------------");
+                    throw new IllegalArgumentException("The parent path cannot be null!");
+    }
+                 
+                if(filename == null)
+       
+                    throw new IllegalArgumentException("The filename cannot be null!");
+}
+catch(IllegalArgumentException e)
+{
+
+    System.out.println(e);
+}
+                 
+       
+                return parent + filename;
+        
+            }
+        
+             
+            @GetMapping("/e")
+      public static void illegalArgsExpt() {
+        
+                // The following command will be successfully executed.
+         System.out.println("dir1 file1");
+               createRelativePath("dir1", "file1");
+        createRelativePath(null, "file1");
+        System.out.println("CreateRelaticePathe called");
+      }
     @GetMapping("/get")
     public @ResponseBody ResponseEntity<List<Event>> all() {
         return new ResponseEntity<>(eventService.getAll(), HttpStatus.OK);
@@ -34,11 +71,11 @@ public class EventController {
 
     @PostMapping("/post")
     public ResponseEntity<?> post(@RequestBody Event event, UriComponentsBuilder ucBuilder) {
-        eventService.save(event);
+      //  eventService.save(event);
         HttpHeaders headers = new HttpHeaders();
-        Event eventt= eventService.save(event);
+        // Event eventt= eventService.save(event);
         headers.setLocation(ucBuilder.path("/api/events/get/{id}").buildAndExpand(event.getId()).toUri());
-        return new ResponseEntity<>( eventt,headers, HttpStatus.CREATED);
+        return new ResponseEntity<>( eventService.save(event),headers, HttpStatus.CREATED);
 
     }
 

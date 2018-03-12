@@ -1,0 +1,33 @@
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 4728 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting service [Tomcat]--
+*[INFO ]-- Starting Servlet Engine: Apache Tomcat/8.5.27--
+*[INFO ]-- Initializing Spring embedded WebApplicationContext--
+*[INFO ]-- Context refreshed--
+*[INFO ]-- Found 1 custom documentation plugin(s)--
+*[INFO ]-- Scanning for api listing references--
+*[INFO ]-- Started EventhandlerApplication in 11.662 seconds (JVM running for 17.196)--
+*[INFO ]-- Initializing Spring FrameworkServlet 'dispatcherServlet'--
+*[INFO ]-- ------------------ @Around advice called ------------------------------------------
+*[INFO ]-- The method find() begins with [42]--
+*[INFO ]-- The method find() ends with null--
+*[INFO ]-- ------------------ @Around advice called ------------------------------------------
+*[INFO ]-- The method find() begins with [53]--
+*[INFO ]-- The method find() ends with com.kgisl.Eventhandler.Eventhandler.model.Event@3d1eb4e1--
+*[INFO ]-- ------------------ @Around advice called ------------------------------------------
+*[INFO ]-- The method save() begins with [com.kgisl.Eventhandler.Eventhandler.model.Event@4daea00b]--
+*[INFO ]-- The method save() ends with com.kgisl.Eventhandler.Eventhandler.model.Event@788d0474--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 7248 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 8164 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 3568 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 11644 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 3104 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 7316 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--
+*[INFO ]-- Starting EventhandlerApplication on 3FTRN427 with PID 8244 (D:\Eventhandler\target\classes started by Trainee in D:\Eventhandler)--
+*[INFO ]-- No active profile set, falling back to default profiles: default--

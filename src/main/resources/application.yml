@@ -1,0 +1,11 @@
+logging:
+  level:
+    ROOT: INFO
+    org.springframework: OFF
+    org.hibernate: ERROR
+    com.kgisl.Eventhandler.Eventhandler: ALL
+   
+  pattern:
+    console: "- %msg%n"
+    file: "*[%-5p]-- %m--%n"
+  file: logs/EventLogGen2.log
